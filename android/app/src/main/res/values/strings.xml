@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">HoneyDo by Amber</string>
+    <string name="title_activity_main">HoneyDo by Amber</string>
+    <string name="package_name">com.honeydo.byamber</string>
+    <string name="custom_url_scheme">com.honeydo.byamber</string>
+    <string name="notification_channel_id">amber_barks_v2</string>
+</resources>

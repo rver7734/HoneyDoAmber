@@ -1,0 +1,16 @@
+[2025-10-01T15:05:45.444Z] Navigating to /login
+[2025-10-01T15:05:46.458Z] Switching to sign-up form
+[2025-10-01T15:05:46.831Z] Signing up with playwright-y42uhy0o@example.com
+[2025-10-01T15:05:47.752Z] Switching back to login form
+[2025-10-01T15:05:47.784Z] Logging in with newly created credentials
+[2025-10-01T15:05:48.385Z] Login confirmed – landed on dashboard
+[2025-10-01T15:05:48.387Z] Creating reminder via smart input
+[2025-10-01T15:05:49.969Z] Navigated to /add with smart input results
+[2025-10-01T15:05:49.971Z] Verifying reminder form defaults
+[2025-10-01T15:05:50.024Z] Enabling weekly recurrence on Monday/Wednesday
+[2025-10-01T15:05:50.851Z] Reminder form submitted; returned to dashboard
+[2025-10-01T15:05:50.854Z] Confirming reminder presence on upcoming list
+[2025-10-01T15:05:50.863Z] Captured reminder id: Szw9HSwVAHcrAHus11yy
+[2025-10-01T15:05:50.864Z] Navigating to bark detail view
+[2025-10-01T15:05:52.939Z] Bark detail confirmed
+[2025-10-01T15:05:52.940Z] Marking reminder complete

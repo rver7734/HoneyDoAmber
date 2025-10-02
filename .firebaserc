@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "ambers-affirmations"
+  },
+  "targets": {
+    "ambers-affirmations": {
+      "hosting": {
+        "app": [
+          "ambers-affirmations"
+        ]
+      }
+    }
+  }
+}

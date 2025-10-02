@@ -1,0 +1,14 @@
+# Settings to manage and configure a Firebase App Hosting backend.
+# https://firebase.google.com/docs/app-hosting/configure
+
+runConfig:
+  cpu: 0.5
+  memoryMiB: 512
+  maxInstances: 2
+
+# Defines a location for your backend to be built and deployed.
+# Tying your backend to a regional Cloud Run location can improve performance.
+# https://firebase.google.com/docs/app-hosting/locations
+#
+# regional: true
+# region: us-central1

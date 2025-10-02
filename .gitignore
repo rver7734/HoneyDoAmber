@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+functions/node_modules/
+
+# environment files
+.env
+*.env.local
+functions/.env
+
+# builds / outputs
+.next/
+out/
+dist/
+coverage/
+firebase-debug.log
+.vscode/
+
+# Capacitor / native build outputs
+android/app/build/
+android/.gradle/
+ios/Pods/
+ios/build/
+
+# Firebase cache
+.firebase/
+
+# OS junk
+.DS_Store

@@ -1,0 +1,20 @@
+[2025-09-28T01:07:28.399Z] Navigating to /login
+[2025-09-28T01:07:29.168Z] Switching to sign-up form
+[2025-09-28T01:07:30.026Z] Signing up with playwright-bdvzookz@example.com
+[2025-09-28T01:07:30.956Z] Switching back to login form
+[2025-09-28T01:07:30.993Z] Logging in with newly created credentials
+[2025-09-28T01:07:32.078Z] Login confirmed – landed on dashboard
+[2025-09-28T01:07:32.080Z] Creating reminder via smart input
+[2025-09-28T01:07:33.745Z] Navigated to /add with smart input results
+[2025-09-28T01:07:33.747Z] Verifying reminder form defaults
+[2025-09-28T01:07:34.030Z] Reminder form submitted; returned to dashboard
+[2025-09-28T01:07:34.031Z] Confirming reminder presence on upcoming list
+[2025-09-28T01:07:34.039Z] Captured reminder id: 6SWkKIcfH2FiTiWmhHuu
+[2025-09-28T01:07:34.039Z] Navigating to bark detail view
+[2025-09-28T01:07:36.067Z] Bark detail confirmed
+[2025-09-28T01:07:36.069Z] Marking reminder complete
+[2025-09-28T01:07:36.645Z] Navigated to completed view
+[2025-09-28T01:07:36.647Z] Verifying reminder in completed list and deleting
+[2025-09-28T01:07:36.791Z] Reminder deleted from completed list
+[2025-09-28T01:07:36.791Z] Double-checking dashboard for reminder cleanup
+[2025-09-28T01:07:38.726Z] Reminder fully removed from upcoming list

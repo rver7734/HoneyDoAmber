@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "220962812092",
+    "project_id": "honeydo-by-amber",
+    "storage_bucket": "honeydo-by-amber.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220962812092:android:ecac94723031a0694f60b9",
+        "android_client_info": {
+          "package_name": "com.honeydo.byamber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220962812092-86snsgclon1e0f21qo0fk8do2707qd2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtqymZSJwhFUnRLfxEp18iuA-PfQLy1ck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220962812092-86snsgclon1e0f21qo0fk8do2707qd2n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "220962812092-8h8odgjsae0pq36kavcg0125tp14k9d0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.honeydobyamber.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220962812092:android:8a53ae9941ecd6e44f60b9",
+        "android_client_info": {
+          "package_name": "com.honeydobyamber.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220962812092-86snsgclon1e0f21qo0fk8do2707qd2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtqymZSJwhFUnRLfxEp18iuA-PfQLy1ck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220962812092-86snsgclon1e0f21qo0fk8do2707qd2n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "220962812092-8h8odgjsae0pq36kavcg0125tp14k9d0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.honeydobyamber.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
