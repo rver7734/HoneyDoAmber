@@ -134,10 +134,44 @@ export function ReminderListItem({ reminder }: ReminderListItemProps) {
           return;
         }
 
-        new Notification("🐾 Amber's Test Bark", {
+        const notificationTitle = "🐾 Amber's Test Bark";
+        const notificationOptions: NotificationOptions = {
           body: aiResult.message,
           icon: '/pawicon-192.png',
-        });
+        };
+
+        let browserNotificationShown = false;
+        try {
+          new Notification(notificationTitle, notificationOptions);
+          browserNotificationShown = true;
+        } catch (notificationError) {
+          try {
+            let registration: ServiceWorkerRegistration | undefined;
+            if ('serviceWorker' in navigator) {
+              try {
+                registration = await navigator.serviceWorker.ready;
+              } catch (error) {
+                console.warn('Unable to await service worker readiness', error);
+              }
+            }
+            if (registration?.showNotification) {
+              await registration.showNotification(notificationTitle, notificationOptions);
+              browserNotificationShown = true;
+            }
+          } catch (serviceWorkerError) {
+            console.warn('Service worker notification fallback failed', serviceWorkerError);
+          }
+
+          if (!browserNotificationShown) {
+            console.warn('Browser Notification API unavailable', notificationError);
+            toast({
+              title: 'Notification Unsupported',
+              description: 'This environment will not show browser notifications. Try the native Test Bark instead.',
+              variant: 'destructive',
+            });
+            return;
+          }
+        }
 
         toast({
           title: '🐾 Test Bark Sent!',

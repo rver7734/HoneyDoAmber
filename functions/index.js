@@ -203,7 +203,7 @@ exports.sendScheduledNotifications = onSchedule('every 1 minutes', async (contex
 });
 
 // Base URL used for deep links inside notifications.
-const APP_BASE_URL = process.env.APP_BASE_URL || 'https://ambers-affirmations.web.app';
+const APP_BASE_URL = process.env.APP_BASE_URL || 'https://honeydobyamber500.vercel.app';
 
 // Helper function to send FCM notifications
 async function sendFCMNotification(userId, reminder) {

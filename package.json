@@ -15,6 +15,9 @@
     "capacitor:open:android": "npx cap open android",
     "android:prepare": "npm run build && npx cap sync android",
     "android:launch": "npm run android:prepare && npm run capacitor:open:android",
+    "android:dev": "CAP_SERVER_URL=https://honeydobyamber500.vercel.app npm run android:prepare",
+    "android:release": "npm run build && npx cap copy android",
+    "android:apk": "npm run android:release && cd android && ./gradlew assembleRelease",
     "test:e2e": "playwright test"
   },
   "dependencies": {

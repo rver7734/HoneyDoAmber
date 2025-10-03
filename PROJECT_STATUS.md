@@ -39,10 +39,11 @@ This single journal replaces the previous collection of status markdowns. It sum
 
 ## 5. Maintenance & Reference
 - **Environment secrets:** historical markdowns exposed legacy API keys. Those files were removed; rotate any still-valid credentials stored outside source control.
-- **Testing guidance:** run `npm run lint` and the notification demo routes before shipping UI or scheduling changes; verify Notification permission workflows on Chrome, Safari, and mobile PWA wrappers.
+- **Testing guidance:** run `npm run lint` and the notification demo routes before shipping UI or scheduling changes; verify Notification permission workflows on Chrome, Safari, and mobile PWA wrappers. For AI flows, confirm the Generative Language API remains enabled and the unrestricted API key is present in `.env`/Vercel before validating copy.
 - **Backlog ideas:** optional account sync, shareable reminder packs, and richer AI suggestions remain candidates but are not active work streams.
 
 ## 6. Change Log
+- **2025-10-02:** Migrated hosting to Vercel (`https://honeydobyamber500.vercel.app`) and updated Capacitor shells to opt into a remote URL only when `CAP_SERVER_URL` is set—bundled assets now work offline by default. Enabled Google Generative Language API for the `honeydo-by-amber` Firebase project and wired new AI prompt instructions so Amber speaks directly to Honey with context-aware quips; added fallback registration for browser notifications when `new Notification()` fails. Refreshed the add/reminder layout with a subtle centered illustration and replaced the Android splash artwork with a transparent logo to avoid stretching on launch.
 - **2025-09-16:** Consolidated documentation into this single journal, removed Twilio/Mailgun references, and confirmed project commitment to local notifications only. (Conversation logged per request.)
 - **2025-07-11:** CI/CD hardened via Firebase Hosting + GitHub Actions; streamlined `.firebase` artifacts handling.
 - **2025-07-10:** Refined scheduled reminder data model and collection-group querying ahead of local-notification pivot; ensured flexible callable function payload handling.

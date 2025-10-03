@@ -1,8 +1,10 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const allowNavigationHosts = [
-  'ambers-affirmations.web.app',
-  'ambers-affirmations.firebaseapp.com',
+  'honeydobyamber500.vercel.app',
+  '*.vercel.app',
+  'honeydo-by-amber.web.app',
+  'honeydo-by-amber.firebaseapp.com',
   'localhost',
   '127.0.0.1',
   '10.0.2.2',
@@ -10,13 +12,15 @@ const allowNavigationHosts = [
   '*.ngrok-free.dev',
 ];
 
-const defaultServerUrl = process.env.CAP_SERVER_URL || 'https://ambers-affirmations.web.app';
+const serverUrl = process.env.CAP_SERVER_URL;
 
-const serverConfig = {
-  url: defaultServerUrl,
-  cleartext: defaultServerUrl.startsWith('http://'),
-  allowNavigation: allowNavigationHosts,
-};
+const serverConfig = serverUrl
+  ? {
+      url: serverUrl,
+      cleartext: serverUrl.startsWith('http://'),
+      allowNavigation: allowNavigationHosts,
+    }
+  : { allowNavigation: allowNavigationHosts };
 
 const config: CapacitorConfig = {
   appId: 'com.honeydo.byamber',

@@ -26,30 +26,34 @@ export function EmptyState({
   imageDataAiHint,
 }: EmptyStateProps) {
   return (
-    <div className="flex items-center justify-between p-8 rounded-lg border-2 border-dashed border-border bg-muted/20 shadow-sm min-h-[400px]">
-      {/* Left side - Text content */}
-      <div className="flex flex-col text-left max-w-md">
-        {!imageUrl && (
-          <IconComponent className="w-16 h-16 text-primary mb-6 opacity-70" />
-        )}
-        <h2 className="text-3xl font-headline font-semibold text-foreground mb-4">{title}</h2>
-        <p className="text-muted-foreground mb-6 text-lg leading-relaxed">{message}</p>
-        {action && <div className="mt-2">{action}</div>}
-      </div>
-      
-      {/* Right side - Large image */}
+    <div className="relative overflow-hidden rounded-lg border-2 border-dashed border-border bg-muted/20 shadow-sm px-8 py-12 min-h-[320px]">
       {imageUrl && (
-        <div className="flex-shrink-0 ml-8">
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center md:justify-end opacity-15">
           <Image
             src={imageUrl}
             alt={imageAlt}
-            width={imageWidth * 2.5}
-            height={imageHeight * 2.5}
-            className="opacity-90 rounded-lg"
+            width={imageWidth * 2}
+            height={imageHeight * 2}
+            className="max-w-[360px] w-full h-auto"
             data-ai-hint={imageDataAiHint}
+            priority={false}
           />
         </div>
       )}
+
+      {/* Text content */}
+      <div className="relative flex flex-col text-left max-w-xl">
+        {!imageUrl && (
+          <IconComponent className="w-16 h-16 text-primary mb-6 opacity-70" />
+        )}
+        <h2 className="text-3xl font-headline font-semibold text-foreground mb-4 drop-shadow-sm">
+          {title}
+        </h2>
+        <p className="text-muted-foreground mb-6 text-lg leading-relaxed drop-shadow-sm">
+          {message}
+        </p>
+        {action && <div className="mt-2">{action}</div>}
+      </div>
     </div>
   );
 }

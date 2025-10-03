@@ -30,15 +30,15 @@ function buildFallbackMessage(
   const persona = definition ?? resolvePersonalityKey(personality);
   switch (persona.key) {
     case 'funny':
-      return `🐾 Amber's dad-joke hour: ${task || 'that task'} is on deck—get going before she drops another groaner!`;
+      return `🐾 Hey Mom, it's Amber cracking up here—let's do ${task || 'that task'} before I unleash another pun!`;
     case 'sarcastic':
-      return `🐾 Yep, because obviously ${task || 'that thing'} will do itself. Amber says hop to it!`;
+      return `🐾 Honey, it's Amber. Apparently ${task || 'that thing'} refuses to finish itself—paws in gear, please.`;
     case 'angry':
-      return `🐾 GRRR! Amber is dramatically annoyed—${task || 'your task'} needs doing NOW or she’ll chew a slipper!`;
+      return `🐾 Mom! Amber here, tail thumping—${task || 'your task'} needs you right now or I'm chewing a slipper.`;
     case 'raging':
-      return `🐾 🔥 Raging Amber ALERT: ${task || 'your task'}. MOVE THOSE PAWS NOW! 🔥`;
+      return `🐾 🔥 Honey! Raging Amber alert—${task || 'your task'} has to happen this instant. Sprint! 🔥`;
     default:
-      return `🐾 Gentle reminder from Amber: ${task || 'your task'} is coming up! You've got this! 💕`;
+      return `🐾 Hey Honey, it's Amber. Let's take care of ${task || 'your task'} together—I've got all the tail wags. 💛`;
   }
 }
 

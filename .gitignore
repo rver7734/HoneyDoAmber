@@ -14,6 +14,7 @@ dist/
 coverage/
 firebase-debug.log
 .vscode/
+android/release/
 
 # Capacitor / native build outputs
 android/app/build/
@@ -26,3 +27,5 @@ ios/build/
 
 # OS junk
 .DS_Store
+.vercel
+.idea/
